@@ -1,0 +1,42 @@
+h1{
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(147, 180, 241);
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+#section1{
+  display: flex;
+  flex-direction: column;
+}
+
+#section1 div:first-child{
+  flex: 0 0 19%;
+  background-color: rgb(146, 144, 134);
+}
+
+#section1 div:nth-child(2){
+  background-color: rgb(168, 204, 170);
+  flex: 0 0 23%;
+}
+
+#section1 div:nth-child(3){
+  background-color: rgb(252, 195, 214);
+  flex: 0 0 27%;
+}
+
+#section1 div:last-child{
+  background-color: rgb(165, 140, 145);
+}
+
+@media only screen and (min-width: 700px) {
+  #section1{
+    flex-direction: row;
+  }
+}

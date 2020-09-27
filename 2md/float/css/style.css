@@ -1,0 +1,74 @@
+body{
+  background-color: rgb(143, 156, 143);
+}
+
+h1, h2{
+  color: rgb(39, 66, 37);
+  margin-left: 3%;
+}
+
+main, nav{
+  background-color: rgb(207, 209, 200);
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+nav{
+  background-color: rgb(151, 207, 151);
+}
+
+nav ul{
+  /* Lai nerādītu punktus */
+  list-style-type: none;
+}
+
+nav ul li{
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.lfloated{
+  float: left;
+  width: 30%;
+  background-color: rgb(255, 245, 219);
+}
+
+.rfloated{
+  float: right;
+  width: 20%;
+  background-color: rgb(201, 244, 250);
+}
+
+.ordinary{
+  margin-left: 32%;
+  margin-right: 22%;
+  background-color: rgb(252, 217, 217);
+}
+
+.float1{
+  float: left;
+  width: 30%;
+  background-color: rgb(170, 201, 201);
+}
+
+.float2{
+  float: right;
+  width: 20%;
+  background-color: rgb(207, 245, 212);
+}
+
+.float3{
+  margin-left: 32%;
+  margin-right: 22%;
+  background-color: rgb(247, 231, 203);
+}

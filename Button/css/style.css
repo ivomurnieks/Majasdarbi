@@ -1,0 +1,48 @@
+body{
+  background-color: rgb(246, 251, 241);
+}
+
+#button1{
+  width: 800px;
+  height: 300px;
+  line-height: 300px;
+  font-size:150px;
+  text-align: center;
+  background-color: rgb(229, 247, 212);
+  color: rgb(11, 53, 11);
+  border: 3px solid rgb(170, 179, 162);
+  border-radius: 80px;
+  box-shadow: 5px 5px 25px rgb(73, 87, 61);
+  margin: auto;
+  user-select: none;
+}
+
+#button1:hover{
+  background-color: rgb(206, 221, 191);
+}
+
+#button1:active{
+  background-color: rgb(179, 206, 155);
+}
+
+button{
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  font-size:16px;
+  text-align: center;
+  background-color: rgb(6, 252, 252);
+  color: rgb(37, 102, 102);
+  border: 1px solid rgb(8, 170, 170);
+  border-radius: 1px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  user-select: none;
+}
+
+button:hover{
+  background-color: rgb(29, 233, 233);
+}
+
+button:active{
+  background-color: rgb(14, 212, 212);
+}

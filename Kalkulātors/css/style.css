@@ -1,0 +1,79 @@
+body{
+  background-color: rgb(202, 214, 202);
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calc form[name="form"]{
+  max-width: 100%;
+  background-color: green
+}
+
+.calc form[name="form"]>input{
+  width: 100%;
+  height: 80px;
+  border: none;
+  outline: none;
+  font-size: 50px;
+  text-align: right;
+  border-radius: 1px;
+  padding: 0px;
+  color:rgb(192, 72, 72);
+  background: rgb(69, 177, 87);
+}
+
+.calc form input[name="textview"] {
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.calc{
+  /* box-sizing: border-box; */
+  user-select: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  background-color: #295534;
+  padding: 4px;
+  border-radius: 4px;
+  max-width: 360px;
+  color: rgb(22, 43, 23);
+  font-family: "Tahoma", sans-serif;
+}
+
+.calc>.item{
+  background: linear-gradient(rgb(250, 143, 143), rgb(138, 255, 134));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.calc .input{
+  grid-column: 1/-1;
+}
+
+.calc .clean{
+  grid-column: 1/3;
+  background: linear-gradient(rgb(255, 62, 72), rgb(132, 228, 76));
+}
+
+.calc .back{
+  grid-column: 3/-1;
+}
+
+.calc .equal{
+  grid-column: 4;
+  grid-row: 6/8;
+  background: linear-gradient(rgb(132, 228, 76), rgb(255, 62, 72));
+}
+
+.calc .zero{
+  grid-column: 1/3;
+}

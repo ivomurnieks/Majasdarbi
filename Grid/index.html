@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+  <div class="flexed" id="header">Header</div>
+	  
+	<div id="nav">
+	  nav
+	</div>
+	  <div class="flexed" id="aside">
+			<form class="login">
+				<h1>Forma.lv</h1>
+				<a href="https://login.inbox.lv/signup?go=portal" >Reģistrēties</a><br><br>
+				<label for="text">Lietotājs:</label><br>
+				<input type="text" name="text" id="text" placeholder="E-pasta adrese" required autofocus><br><br>
+				<label for="text">Parole:</label><br>
+				<input type="password" name="password" id="password" placeholder="Ierakstiet paroli"><br><br>
+				<input type="checkbox" name="checkbox" id="checkbox" value="checkbox">
+				<label for="text">Atcerēties mani</label>
+				<br>
+				<input type="submit" value="submit">
+			</form>
+    </div>
+	  <div class="flexed" id="main">
+			<div id="user"></div>
+		</div>
+	  <div class="flexed" id="footer">Footer</div>
+  </div>
+	<script src="js/main.js"></script>
+	<script>
+		const nav = document.getElementById('nav')
+
+		const menus = [
+		  {name: 'Home', path: '/home'},
+		  {name: 'Products', path: '/products'},
+		  {name: 'Clients', path: '/clients'},
+		  {name: 'About us', path: '/aboutus'},
+		  {name: 'Contacts', path: '/contacts'}
+		]
+
+		var out = ''
+		out += '<ul>'
+
+		menus.forEach(menu => {
+		  // console.log(menu)
+		  out += `<li><a href="${menu.path}">${menu.name}</a></li>`
+		})
+		out += '</ul>'
+		nav.innerHTML = out;
+	</script>
+</body>
+</html>
